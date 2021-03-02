@@ -11,9 +11,13 @@
 
 
 
-
+![Image](https://github.com/19801201/Image/blob/main/new.png)
 
 Dsp 的主要作用：1、读写DDR，2、读写reg，3、响应FPGA的发起信号
 如上图所示：User_app 作为控制FIFO的逻辑，Srio_Control作为控制SRIO_Ip的逻辑，两者需要进行交互，SRIO_IP 通过SRIO接口与DSP 
 进行数据交互，包括接收从FPGA传来的数据，以及向FPGA中写数据（写DDR和REG）该阶段包括写指令，写权重以及写图像数据
 DSP在整个工程中的作用与上位机类似，起到接收数据，控制FPGA的读写
+
+
+![Image](https://github.com/19801201/Image/blob/main/old.png)
+之前的工程主要使用PCIE连接PC 和FPGA
